@@ -1,0 +1,97 @@
+.city{
+    color:white;
+    margin-left:5px;
+    font-size:10px;
+    margin-top:12px;
+}
+.img{
+    width: 40%;
+}
+.clients{
+    text-align: center;
+}
+.container{
+    margin: 20px;
+}
+.feedback{
+    margin: 5px;
+    padding: 5px;
+}
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+/* Footer Code */
+
+.footer{
+  width: 100%;
+  height:fit-content;
+  display:flex;
+  justify-content: space-between;
+  background-color:black;
+  padding: 10px; 
+}
+.address{
+  font-size: medium;
+  color: #f0f0f0;
+  margin: 22px;
+}
+.emailsent{
+    color: black;
+}
+.form {
+  color: aliceblue;
+}
+.developer{
+  background-color: black;
+  color: white;
+  font-size: larger;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  height: max-content;
+}
+.icons{
+  color:white;
+  font-size: larger;
+}
+.control {
+  margin-bottom: 0.5rem;
+}
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+.control input:focus,
+.control textarea:focus {
+  background-color: #cbf8f8;
+  outline-color: teal;
+}
+.btn{
+  box-sizing:content-box;
+  background-color: orange;
+} 
+@media only screen and (max-width: 480px) {
+  .footer{
+    width:100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .city{
+        color:white;
+        margin: 0;
+        margin-left: 0%;
+        font-size: small;
+    }
+    
+}

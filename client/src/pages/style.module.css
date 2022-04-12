@@ -1,0 +1,218 @@
+.line{
+  padding-top: 20px;
+}
+
+.building{
+  height: 5 40px;
+  width: 100%;
+  
+}
+
+.intro {  
+  position: relative;
+}
+
+
+.carousel{  
+  margin: 30px;
+}
+
+.card{
+  margin: 20px;
+  font-size: large;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  height: max-content;
+}
+
+
+
+/* .contact{
+    font-weight: bolder;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color:wheat;      
+}
+.centered{
+  text-align: center;
+}
+
+.details{
+  padding-right: 50%;
+}
+
+
+
+.h3{
+  text-align: center;
+  color: #1f2526;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  font-family: europa;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+
+.why{
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #1f2526;
+  font-size: 48px;
+  font-family: europa;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+
+.why1{
+  padding: 6rem;
+}
+
+
+.building{
+  height: 5 50px;
+  width: 100%;
+  padding:1rem;
+}
+
+.aboutp{
+  padding: 4rem;
+  font-size: larger;
+  font-family:cursive;
+
+}
+
+.abouthead{
+  padding: 1rem;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+
+.building2{
+  height: 25rem;
+  width: 25rem;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .building2{
+    width: 95%;
+  }
+}
+
+.estateImg{
+  display: block;
+  height: 25rem;
+  width: 45rem;
+  padding: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  .estateImg{
+    width: 95%;
+  }
+}
+
+.contacthead{
+  padding:2rem;
+  font-weight: bolder;
+}
+
+.process{
+  padding:2rem;
+  font-size: larger;
+  font-family:cursive;
+}
+
+.form {
+  position: relative;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.control input:focus,
+.control textarea:focus {
+  background-color: #cbf8f8;
+  outline-color: teal;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font-size: 1.25rem;
+}
+
+.contactdetails{
+  padding-left: 8rem;
+  display: block;
+}
+
+.heading{
+  text-align: center;
+  font-family: cursive;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.projectshead{
+  text-align: center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-style:inherit;
+  color: crimson;
+}
+
+.concept{
+  height: 25rem;
+  width: 25rem;
+  padding: 2rem;
+}
+
+.detailsconcept{
+  padding:4rem;
+  font-size: larger;
+  font-family:cursive;
+} */
