@@ -6,7 +6,7 @@ color: #808080;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 2rem;
+padding: 0 15px;
 height: 100%;
 cursor: pointer;
 &.active {

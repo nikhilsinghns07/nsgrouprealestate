@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container,Nav,Image} from 'react-bootstrap'
-import { Navbar } from 'react-bootstrap'
+import { Navbar ,NavDropdown} from 'react-bootstrap'
 import {NavLink} from './Elements'
 import logo from '../pics/logo.jpeg'
 import {GoLocation} from 'react-icons/go'
@@ -17,8 +17,9 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <NavLink to="/projects">Projects</NavLink>
-                            <NavLink to="/aboutus">About</NavLink>
+                            <NavLink to="/aboutus">About Us</NavLink>
                             <NavLink to="/contact">Contact</NavLink>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

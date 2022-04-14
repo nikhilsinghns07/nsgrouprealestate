@@ -1,9 +1,7 @@
 import React from 'react'
-import { useState } from "react"
-import axios from 'axios'
 import { ExternalLink } from 'react-external-link';
 import classes from './style.module.css'
-import {TextField,Button,Stack,styled,Paper} from '@mui/material'
+import {Stack,styled,Paper} from '@mui/material'
 import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -20,60 +18,27 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Footer = () => {
-    const [enteredName , setEnteredName] = useState('')
-    const [enteredMessage , setEnteredMessage] = useState('')
-    const [enteredContact,setContact] = useState('')
 
-    const submitHandler = async(event) => {
-        try{
-            await axios.post("/send",{
-                name : enteredName,
-                message : enteredMessage,
-                contact : enteredContact
-            })
-        }catch(error){
-        }
-        setEnteredName('')
-        setEnteredMessage('')
-        setContact('')
-    }
-    
     return (
         <React.Fragment>
-            <footer className={classes.footer}>
-            <div>
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-                    <CallIcon color="primary"/>
-                    <Item>+919955395131</Item>
-                    <Item>+8804058270</Item>
-                </Stack>
-                <br />
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-                    <BusinessIcon color="primary"/>
-                    <Item>14 Gola Road , Patna 801503</Item>
-                </Stack>
+            <div className={classes.footer}>
+                <p style={{color:'#808080',fontWeight:'bolder',textAlign:'center'}}> Contact US </p>
+                <div >
+                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+                        <CallIcon color="primary"/> <span style={{color:'whitesmoke'}}> Call US</span>
+                        <Item>+919955395131</Item>
+                        <Item>+8804058270</Item>
+                    </Stack>
+                    <br/>
+                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+                        <BusinessIcon color="primary"/>  <span style={{color:'whitesmoke'}}> Office</span>
+                        <Item>14 Gola Road , Patna 801503</Item>
+                    </Stack>
+                </div>
             </div>
 
-                <form  className={classes.form} onSubmit={submitHandler} >
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Name" variant="filled" onChange={(text) => {setEnteredName(text)}}/>
-                        </div>
-
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Message" variant="filled" onChange={(text) => {setEnteredMessage(text)}}/>
-                        </div>
-
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Contact Details" variant="filled"  onChange={(text) => {setContact(text)}}/>
-                        </div>
-                        <Button variant="contained" onPress={() => submitHandler()}>Send</Button>
-                </form>
-                    
-            </footer>
-
             <div className={classes.developer}>
-                
-                <p style={{color:'#808080',fontWeight:'bolder',textAlign:'center'}}> Developer Contact </p><br/>
+                <p style={{color:'#808080',fontWeight:'bolder',textAlign:'center',fontSize:15}}> Developer Contact </p>
                 <div>
                     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }} justifyContent='center'>
                         <Item><ExternalLink href="https://www.linkedin.com/in/nikhilsinghns07/"> <LinkedInIcon color="primary"/> </ExternalLink> </Item>

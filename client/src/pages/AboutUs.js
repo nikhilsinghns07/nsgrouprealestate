@@ -5,8 +5,7 @@ import classes from './style.module.css'
 const AboutUs = () => {
     return (
         <React.Fragment>
-            <h1 className={classes.heading}>"Blended with luxury and affordability".</h1>
-            
+            <h1 className={classes.heading}>"Blended with luxury and affordability".</h1> 
             <div>
                 <img src={pic2} align="left" className={classes.estateImg} alt='building'></img>
                 <p className={classes.process}>

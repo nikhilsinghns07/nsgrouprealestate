@@ -23,24 +23,12 @@
 
 .footer{
   width: 100%;
-  height:fit-content;
-  display:flex;
-  justify-content: space-between;
+  height:max-content;
   background-color:black;
-  padding: 10px; 
 }
-.address{
-  font-size: medium;
-  color: #f0f0f0;
-  margin: 22px;
-}
-.emailsent{
-    color: black;
-}
-.form {
-  color: aliceblue;
-}
+
 .developer{
+  padding-top: 5px;
   background-color: black;
   color: white;
   font-size: larger;
@@ -51,6 +39,8 @@
   color:white;
   font-size: larger;
 }
+
+/* 
 .control {
   margin-bottom: 0.5rem;
 }
@@ -68,7 +58,7 @@
   border: 1px solid #c1d1d1;
   display: block;
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1 rem;
 }
 .control input:focus,
 .control textarea:focus {
@@ -78,7 +68,7 @@
 .btn{
   box-sizing:content-box;
   background-color: orange;
-} 
+}  */
 @media only screen and (max-width: 480px) {
   .footer{
     width:100%;
