@@ -39,6 +39,29 @@
   color:white;
   font-size: larger;
 }
+
+/* Why US */
+.whyus {
+  margin: 5rem;
+  font-weight: 300;
+  font-size: large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+/* Chairman */
+.chairmanContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.message{
+  margin: 10px;
+  width: 50%;
+}
+
 @media only screen and (max-width: 480px) {
   .footer{
     width:100%;
