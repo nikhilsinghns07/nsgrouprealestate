@@ -6,6 +6,7 @@ import { ExternalLink } from 'react-external-link';
 import classes from './style.module.css'
 import {TextField,Button} from '@mui/material'
 
+
 const Contact = () => {
     const [enteredName , setEnteredName] = useState('')
     const [enteredMessage , setEnteredMessage] = useState('')
@@ -26,6 +27,7 @@ const Contact = () => {
     
     return (
         <React.Fragment>
+            
             <footer className={classes.footer}>
                 <span className={classes.intro}>Contact Details <br/><span className={classes.icons}>  
                     <ExternalLink href="https://www.linkedin.com/in/nikhilsinghns07/"> <FaLinkedin/> </ExternalLink>
