@@ -1,56 +1,92 @@
-import React from 'react'
-import { useState } from "react"
-import axios from 'axios'
-import { FaGithub, FaLinkedin} from "react-icons/fa"
-import { ExternalLink } from 'react-external-link';
+import React,{useState} from 'react'
+import {Card} from 'react-bootstrap'
 import classes from './style.module.css'
-import {TextField,Button} from '@mui/material'
-
+import {Divider} from '@mui/material'
+import axios from 'axios'
+import Footer from '../components/Footer'
 
 const Contact = () => {
     const [enteredName , setEnteredName] = useState('')
     const [enteredMessage , setEnteredMessage] = useState('')
-    const [enteredContact,setContact] = useState('')
+    const [enteredEmail , setEnteredEmail] = useState('')
+    const [enteredContact , setEnteredContact] = useState('')
+
+    const nameHandler = (event) => {
+        setEnteredName(event.target.value)
+    }
+
+    const emailHandler = (event) => {
+        setEnteredEmail(event.target.value)
+    }
+
+    const contactHandler = (event) => {
+        setEnteredContact(event.target.value)
+    }
+
+    const messageHandler = (event) => {
+        setEnteredMessage(event.target.value)
+    }
 
     const submitHandler = async(event) => {
         try{
             await axios.post("/send",{
                 name : enteredName,
+                email : enteredEmail,
+                contact : enteredContact,
                 message : enteredMessage,
-                contact : enteredContact
+
+            }).then(res=>{
+                console.log(res)
             })
         }catch(error){
+            console.log(error)
         }
         setEnteredName('')
         setEnteredMessage('')
     }
-    
+
     return (
         <React.Fragment>
-            
-            <footer className={classes.footer}>
-                <span className={classes.intro}>Contact Details <br/><span className={classes.icons}>  
-                    <ExternalLink href="https://www.linkedin.com/in/nikhilsinghns07/"> <FaLinkedin/> </ExternalLink>
-                    <ExternalLink href="https://github.com/nikhilsinghns07" > <FaGithub /> </ExternalLink> 
-                </span></span> 
+            <p className={classes.headertitle}>
+                    <h3>
+                        <span className={classes.highlight}>CONTACT US</span>
+                    </h3>
+                </p>
+            <Divider variant="middle"/>
+            <Card className={classes.card}>
                 
-                <form  className={classes.form} onSubmit={submitHandler} >
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Name" variant="filled" onChange={(text) => {setEnteredName(text)}}/>
-                        </div>
+                <Card.Header style={{textAlign:'center'}}>
+                WE ALWAYS LOVE TO HEAR FROM OUR CUSTOMERS. FEEL FREE TO DROP IN OR CONTACT US DURING OUR BUSINESS HOURS.
+                </Card.Header>
+                <Card.Body>
+                    <form  className={classes.form} onSubmit={submitHandler} >
+                            <div className={classes.control}>
+                                <label htmlFor='name'>Name</label>
+                                <input type='text' id='name' value={enteredName} onChange={nameHandler}/>
+                            </div>
 
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Message" variant="filled" onChange={(text) => {setEnteredMessage(text)}}/>
-                        </div>
+                            <div className={classes.control}>
+                                <label htmlFor='text'>Email</label>
+                                <input type='text' id='email' value={enteredEmail} onChange={emailHandler} />
+                            </div>
 
-                        <div className={classes.control}>
-                            <TextField id="filled-basic" label="Contact Details" variant="filled"  onChange={(text) => {setContact(text)}}/>
-                        </div>
-                        <Button variant="contained">Send</Button>
-                </form>
-                    
-            </footer>
+                            <div className={classes.control}>
+                                <label htmlFor='text'>Contact Details</label>
+                                <input type='text' id='contact' value={enteredContact} onChange={contactHandler} />
+                            </div>
 
+                            <div className={classes.control}>
+                                <label htmlFor='text'>Message</label>
+                                <input type='text' id='message' value={enteredMessage} onChange={messageHandler} />
+                            </div>
+
+                            <div className={classes.actions}>
+                            <button className={classes.btn}>Send</button>
+                            </div>
+                        </form>
+                </Card.Body>
+            </Card>
+            <Footer />
         </React.Fragment>
         
     )

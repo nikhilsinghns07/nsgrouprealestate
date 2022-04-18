@@ -6,8 +6,10 @@ const cors = require('cors');
 const bodyparser = require('body-parser')
 const path = require('path')
 const fs  = require('fs')
+const https = require('https')
 
-const PORT = process.env.PORT || 5002
+
+const PORT = process.env.PORT || 5000
 
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
@@ -20,15 +22,16 @@ const transporter = nodemailer.createTransport(sendGridTransport({
   }
 }))
 
-app.post('/contact/send' , cors() , async(req,res) => {
-  let {name , message ,contact} = req.body
+app.post('/send' , cors() , async(req,res) => {
+  let {name , message ,contact,email} = req.body
   await transporter.sendMail({
     to : 'nikhilsinghns01@gmail.com',
     from: 'nsbooks07@gmail.com',
     subject : 'Contact Details',     
-    html: `<h1> My name is ${name}</h1>          
+    html: `<h1> My name is ${name} </h1>          
             <p> ${message} </p>
-            <p>My Contact Details are : ${contact} </p>`
+            <p>My Contact Details are : ${contact} my email id is  : ${email}
+            </p>`
   }).then(res => {
     console.log(res)
   }).catch(err=>{
