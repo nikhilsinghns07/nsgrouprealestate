@@ -69,12 +69,14 @@
 
 
 /* About */
+
 .img{
   background-image: url('../pics/pic2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+
 .container{
   display: flex;
   flex-direction: row;
@@ -144,4 +146,45 @@
 .btn{
   box-sizing:content-box;
   background-color: orange;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .img{
+    background-image: url('../pics/pic2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    opacity: 40%;
+    border-radius: 8px;
+  }
+
+  .services{
+    color: cornsilk;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  .details {
+    width: 100%; 
+    font-size: large;
+    font-weight: bolder;
+    color:orange;
+  }
+  
+  .para {
+    margin: 2rem;
+    font-weight: 300;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+  
+  
 }

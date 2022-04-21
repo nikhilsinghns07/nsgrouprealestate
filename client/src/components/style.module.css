@@ -78,5 +78,25 @@
         margin-left: 0%;
         font-size: small;
     }
+    .chairmanContainer{
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      
+    }
+    .message{
+      margin: 10px;
+      width: 90%;
+    }
+    .img{
+      height:max-content;
+      width: 90%;
+    }
+    .whyus {
+      margin: 2rem;
+      font-weight: 300;
+      font-size: large;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
     
 }

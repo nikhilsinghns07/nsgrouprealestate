@@ -16,11 +16,11 @@ const Home = () => {
             <div className={classes.intro}>
                 <img src={building} className={classes.building} alt='buildng'></img>       
             </div>
-            <p className={classes.headertitle}>
-                <h3>
+            <h3 className={classes.headertitle}>
+                <p>
                     <span className={classes.highlight}>CHAIRMAN'S DESK</span>
-                </h3>
-            </p>
+                </p>
+            </h3>
             <Chairman />
             <Carousel fade className={classes.carousel}>
                 <Carousel.Item>
@@ -48,11 +48,11 @@ const Home = () => {
                     manage the process from start to finish, so you can remain clear-headed.
                 </Card.Body>
             </Card>
-            <p className={classes.headertitle}>
-                <h3>
+            <h3 className={classes.headertitle}>
+                <p>
                     <span className={classes.highlight}>Our Happy Clients</span>
-                </h3>
-            </p>
+                </p>
+            </h3>
             <Divider variant='middle'/>
             <FeedBack />
             

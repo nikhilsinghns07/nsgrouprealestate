@@ -47,11 +47,11 @@ const Contact = () => {
 
     return (
         <React.Fragment>
-            <p className={classes.headertitle}>
-                    <h3>
+            <h3 className={classes.headertitle}>
+                    <p>
                         <span className={classes.highlight}>CONTACT US</span>
-                    </h3>
-                </p>
+                    </p>
+                </h3>
             <Divider variant="middle"/>
             <Card className={classes.card}>
                 

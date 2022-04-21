@@ -31,11 +31,11 @@ const AboutUs = () => {
             
             </section>
             <section id="about"> 
-                <p className={classes.headertitle}>
-                    <h3>
+                <h3 className={classes.headertitle}>
+                    <p>
                         <span className={classes.highlight}>ABOUT US</span>
-                    </h3>
-                </p>
+                    </p>
+                </h3>
                 <Divider variant="middle"/>
             <p className={classes.para}>
                 NS07 Group has sustained a steady growth to become the leading real estate developer in the region boasting of outstanding 
@@ -70,11 +70,11 @@ const AboutUs = () => {
                 and that is not something beyond the limitations of an average Indian buyer. <br/> <br/>
             </p>
             </section>
-            <p className={classes.headertitle}>
-                    <h3>
+            <h3 className={classes.headertitle}>
+                    <p>
                         <span className={classes.highlight}>WHY US ?</span>
-                    </h3>
-                </p>
+                    </p>
+                </h3>
             <Divider variant="middle"/>
             <Whyus />
             <Footer />

@@ -27,7 +27,7 @@ const Footer = () => {
                     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
                         <CallIcon color="primary"/> <span style={{color:'whitesmoke'}}> Call US</span>
                         <Item>+919955395131</Item>
-                        <Item>+8804058270</Item>
+                        <Item>+918804058270</Item>
                     </Stack>
                     <br/>
                     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
