@@ -6,8 +6,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BusinessIcon from '@mui/icons-material/Business';
-import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import { NavLink } from 'react-router-dom';
+
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -25,14 +27,9 @@ const Footer = () => {
                 <p style={{color:'#808080',fontWeight:'bolder',textAlign:'center'}}> Contact US </p>
                 <div >
                     <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-                        <CallIcon color="primary"/> <span style={{color:'whitesmoke'}}> Call US</span>
-                        <Item>+919955395131</Item>
-                        <Item>+918804058270</Item>
-                    </Stack>
-                    <br/>
-                    <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
                         <BusinessIcon color="primary"/>  <span style={{color:'whitesmoke'}}> Office</span>
                         <Item>14 Gola Road , Patna 801503</Item>
+                        <Item> Visit Contact Page <NavLink to="/contact"> <ContactPageIcon /> </NavLink></Item>
                     </Stack>
                 </div>
             </div>

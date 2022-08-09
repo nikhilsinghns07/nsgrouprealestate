@@ -11,7 +11,7 @@ const Header = () => {
         <React.Fragment>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/"> <Image src={logo} height='75' width='75'/></Navbar.Brand>/
+                    <NavLink to="/"> <Image src={logo} height='75' width='75'/></NavLink>/
                     <GoLocation color='white'/><p className={classes.city}>Patna</p>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
