@@ -6,10 +6,13 @@ import concept from '../pics/concept.jpg'
 import three from '../pics/3.jpg'
 import {Carousel,Card} from 'react-bootstrap'
 import Footer from '../components/Footer'
+import Header from "../components/Header"
 
 const Projects = () => {
     return(
+        
         <React.Fragment>
+            <Header />
             <div style={{paddingTop:20}}/>
             <Card style={{padding:15,margin:20}}>
                 <Card.Header style={{textAlign : 'center',fontSize:20,fontWeight:'bolder'}}>Bookings Open</Card.Header>

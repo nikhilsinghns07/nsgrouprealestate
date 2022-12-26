@@ -7,10 +7,12 @@ import BuildIcon from '@mui/icons-material/Build';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import { Divider } from '@mui/material';
 import Whyus from '../components/Whyus';
+import Header from '../components/Header'
 
 const AboutUs = () => {
     return (
         <React.Fragment>
+            <Header />
             <section id="aboutus" >
                 <div className={classes.img}>
                     <div className={classes.container}>

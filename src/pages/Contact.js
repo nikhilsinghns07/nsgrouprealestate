@@ -4,6 +4,7 @@ import classes from './style.module.css'
 import {Divider} from '@mui/material'
 import axios from 'axios'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const Contact = () => {
     const [enteredName , setEnteredName] = useState('')
@@ -47,6 +48,7 @@ const Contact = () => {
 
     return (
         <React.Fragment>
+            <Header />
             <h3 className={classes.headertitle}>
                     <p>
                         <span className={classes.highlight}>CONTACT US</span>

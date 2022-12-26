@@ -9,10 +9,12 @@ import b2 from '../pics/b2.jpg'
 import b3 from '../pics/b3.png'
 import { Divider } from '@mui/material'
 import Chairman from '../components/Chairman'
+import Header from '../components/Header'
 
 const Home = () => {
     return (
         <React.Fragment>
+            <Header />
             <div className={classes.intro}>
                 <img src={building} className={classes.building} alt='buildng'></img>       
             </div>

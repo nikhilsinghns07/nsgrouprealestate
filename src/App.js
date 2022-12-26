@@ -1,45 +1,25 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, BrowserRouter ,Routes,Navigate} from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import AboutUs from './pages/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
+
 import Contact from './pages/Contact';
 
 function App() {
   return (
-    <React.Fragment>
-      <Header />
-      
-      <Switch>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/projects' element={<Projects />} />
+      <Route path='/aboutus' element={<AboutUs />} />
+      <Route path='/contact' element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
 
-        <Route path='/' exact>
-          <Home />
-        </Route>
 
-        <Route path='/projects'>
-          <Projects />
-        </Route>
-
-        <Route path='/aboutus'>
-          <AboutUs />
-        </Route>
-
-        <Route path='/contact'>
-          <Contact />
-        </Route>
-
-        <Route path ='*'>
-          <Redirect to='/'></Redirect>
-        </Route>
-
-      </Switch>
-
-      
-      </React.Fragment>
-    
-
+    </Routes>
+    </BrowserRouter>
   );
 }
 
